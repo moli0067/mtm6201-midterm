@@ -437,6 +437,20 @@ p{
     font-weight:700;
 }
 
+.menu-toggle{
+    display:block;
+    background:none;
+    border:none;
+    color:var(--white);
+    font-size:2rem;
+    cursor:pointer;
+}
+
+.main-nav{
+    display:none;
+}
+
+
 /* tablet */
 @media (min-width:768px){
 
@@ -511,6 +525,18 @@ p{
 
     .testimonials-cards > div:last-child{
         width:45%;
+    }
+
+    @media (min-width:768px){
+
+        .menu-toggle{
+            display:none;
+        }
+
+        .main-nav{
+            display:block;
+        }
+
     }
 }
 
@@ -590,6 +616,15 @@ p{
 
     .testimonials-cards > div{
         flex:1;
+    }
+
+    @media (min-width:768px){
+        .menu-toggle{
+            display:none;
+        }
+        .main-nav{
+            display:block;
+        }
     }
 }
 
